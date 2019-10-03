@@ -21,6 +21,21 @@ QIFI 协议 作为qatrader/ qapms的标准协议, 支持股票/期货市场
 此协议目前也是我们内部实盘在用, 兼容风控系统的一个协议, 稳定运行半年左右
 
 
+
+### 关联项目
+
+
+- [QUANTAXIS](https://github.com/quantaxis/quantaxis)
+- [QATrader](https://github.com/yutiansut/qatrader)
+- [QAPMS](https://github.com/yutiansut/QAPMS)
+- [QACEPEngine](https://github.com/yutiansut/QACEPEngine)
+- [QARiskPro](https://github.com/yutiansut/QARiskPro)
+- [QAPBSystem](https://github.com/yutiansut/QAPBSystem)
+
+
+
+
+
 ###  为什么要有这个协议:
 
 主要目的是把 策略  /  背后的账户实现解耦
