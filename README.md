@@ -36,6 +36,24 @@ QIFI 协议 作为qatrader/ qapms的标准协议, 支持股票/期货市场
 ```json
 {
     "account_cookie" : "100010",  // 账户号(兼容QUANTAXIS QAAccount)
+    "password" : "100010",
+    "ping_gap" : 5,
+    "portfolio" : "default",
+    "broker_name" : "QUANTAXIS",  // 接入商名称
+    "capital_password" : null,   // 资金密码 (实盘用)
+    "bank_password" : null,   // 银行密码(实盘用)
+    "bankid" : "SIM",         // 银行id
+    "investor_name" : "",   // 开户人名称
+    "money" : 0.0,          // 当前可用现金
+    "pub_host" : "localhost",
+    "settlement" : {},
+    "taskid" : null,
+    "trade_host" : "127.0.0.1",
+    "updatetime" : "2019-09-06 21:19:48.346640",
+    "wsuri" : "ws://www.yutiansut.com:7988",
+    "bankname" : "模拟银行",
+    "trading_day" : "20190909",
+    "status" : 200
     "accounts" : {
         "user_id" : "100010",  // 用户号 兼容diff协议, ==> 实盘则为具体账户号
         "currency" : "CNY",    // 货币属性 兼容diff协议
@@ -57,9 +75,7 @@ QIFI 协议 作为qatrader/ qapms的标准协议, 支持股票/期货市场
         "available" : 988969.16,   // 可用资金
         "risk_ratio" : 0.00547247522974895   // 风险度
     },
-    "bank_password" : null,   // 银行密码(实盘用)
-    "bankid" : "SIM",         // 银行id
-    "banks" : {
+    "banks" : {               // 银行内容(支持多银行 id识别)
         "SIM" : {
             "id" : "SIM",
             "name" : "模拟银行",
@@ -68,9 +84,7 @@ QIFI 协议 作为qatrader/ qapms的标准协议, 支持股票/期货市场
             "qry_count" : 0
         }
     },
-    "broker_name" : "QUANTAXIS",
-    "capital_password" : null,
-    "event" : {
+    "event" : {                   // 事件 time+ 内容
         "2019-09-06 21:01:36" : "登录成功",
         "2019-09-06 21:12:53" : "下单成功",
         "2019-09-06 21:14:25" : "下单成功",
@@ -78,9 +92,7 @@ QIFI 协议 作为qatrader/ qapms的标准协议, 支持股票/期货市场
         "2019-09-06 21:14:57" : "成交通知,合约:SHFE.rb2001,手数:1",
         "2019-09-06 21:16:50" : "成交通知,合约:SHFE.rb2001,手数:1"
     },
-    "investor_name" : "",
-    "money" : 0.0,
-    "orders" : {
+    "orders" : {            // 多段order 订单
         "QAOTG_5oAYRUI3" : {
             "seqno" : 8,
             "user_id" : "100010",
@@ -158,9 +170,6 @@ QIFI 协议 作为qatrader/ qapms的标准协议, 支持股票/期货市场
             "last_msg" : ""
         }
     },
-    "password" : "100010",
-    "ping_gap" : 5,
-    "portfolio" : "default",
     "positions" : {
         "SHFE_rb2001" : {
             "user_id" : "100010",
@@ -204,10 +213,6 @@ QIFI 协议 作为qatrader/ qapms的标准协议, 支持股票/期货市场
             "margin" : 5472.0
         }
     },
-    "pub_host" : "localhost",
-    "settlement" : {},
-    "taskid" : null,
-    "trade_host" : "127.0.0.1",
     "trades" : {
         "6" : {
             "seqno" : 7,
@@ -241,9 +246,4 @@ QIFI 协议 作为qatrader/ qapms的标准协议, 支持股票/期货市场
         }
     },
     "transfers" : {},
-    "updatetime" : "2019-09-06 21:19:48.346640",
-    "wsuri" : "ws://www.yutiansut.com:7988",
-    "bankname" : "模拟银行",
-    "trading_day" : "20190909",
-    "status" : 200
  }
