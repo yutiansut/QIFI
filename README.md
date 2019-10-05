@@ -9,12 +9,17 @@ QIFI 协议 作为qatrader/ qapms的标准协议, 支持股票/期货市场
 - 名称 QIFI   为 Quantaxis Differential Information Flow for Finance Intergration
 
 - 核心字段
-		-  'accounts'
-		-  'events'
-		-  'trades'
-		-  'orders'
-		-  'positions'
-		-  'broker_name'
+	-  'accounts'
+
+	-  'events'
+
+	-  'trades'
+
+	-  'orders'
+
+	-  'positions'
+
+	-  'broker_name'
 		
 此协议是QUANTAXIS 未来1年以内的稳定版本, 不会更改
 
@@ -27,10 +32,13 @@ QIFI 协议 作为qatrader/ qapms的标准协议, 支持股票/期货市场
 
 - [QUANTAXIS](https://github.com/quantaxis/quantaxis)
 - [QATrader](https://github.com/yutiansut/qatrader)
+- [QAStrategy](https://github.com/yutiansut/QAStrategy)
+
 - [QAPMS](https://github.com/yutiansut/QAPMS)
 - [QACEPEngine](https://github.com/yutiansut/QACEPEngine)
 - [QARiskPro](https://github.com/yutiansut/QARiskPro)
 - [QAPBSystem](https://github.com/yutiansut/QAPBSystem)
+
 
 
 
