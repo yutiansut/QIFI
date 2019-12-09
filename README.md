@@ -36,6 +36,7 @@ QIFI 协议 作为qatrader/ qapms的标准协议, 支持股票/期货市场
 - [QATrader](https://github.com/yutiansut/qatrader)
 - [QIFIAccount](https://github.com/yutiansut/QIFIAccount)
 - [QAStrategy](https://github.com/yutiansut/QAStrategy)
+- [qatrader-rs](https://github.com/yutiansut/qatrader-rs)
 
 
 - [QAPMS](https://github.com/yutiansut/QAPMS)
