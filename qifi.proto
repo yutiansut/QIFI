@@ -1,0 +1,149 @@
+syntax = "proto3";
+
+message Account {
+   string user_id = 1;
+   string currency = 2;
+   float pre_balance = 3;
+   float deposit =4;
+   float withdraw =5;
+   float WithdrawQuota =6;
+   float close_profit =7;
+   float commission =8;
+   float premium =9;
+   float static_balance =10;
+   float position_profit =11;
+   float float_profit =12;
+   float balance =13;
+   float margin =14;
+   float frozen_margin =15;
+   float frozen_commission=16;
+   float frozen_premium =17;
+   float available =18;
+   float risk_ratio =19;
+}
+
+message Trade {
+   int32 seqno=1;
+   string user_id=2;
+   string trade_id = 3;
+   string exchange_id =4;
+   string instrument_id=5;
+   string order_id=6;
+   string exchange_trade_id=7;
+   string direction=8;
+   float offset=9;
+   float volume=10;
+   float price=11;
+   int64 trade_date_time=12;
+
+}
+
+message Order {
+   int32 seqno=1;
+   string user_id=2;
+   string order_id=3;
+   string exchange_id=4;
+   string instrument_id=5;
+   string direction=6;
+   string offset=7;
+   float volume_orign=8;
+   string price_type=9;
+   float limit_price=10;
+   string time_condition=11;
+   string volume_condition=12;
+   int64 insert_date_time=13;
+   string exchange_order_id=14;
+   string status=15;
+   float volume_left=16;
+   string last_msg=17;
+
+}
+
+message Position{
+   string user_id=1;
+   string exchange_id=2;
+   string instrument_id=3;
+   float volume_long_today=4;
+   float volume_long_his=5;
+   float volume_long =6;
+   float volume_long_frozen_today=7;
+   float volume_long_frozen_his=8;
+   float volume_long_frozen=9;
+   float volume_short_today=10;
+   float volume_short_his=11;
+   float volume_short=12;
+   float volume_short_frozen_today=13;
+   float volume_short_frozen_his=14;
+   float volume_short_frozen=15;
+   float volume_long_yd=16;
+   float volume_short_yd=17;
+   float pos_long_his= 18;
+   float pos_long_today=19;
+   float pos_short_his=20;
+   float pos_short_today=21;
+   float open_price_long =22;
+   float open_price_short =23;
+   float open_cost_long=24;
+   float open_cost_short=25;
+   float position_price_long=26;
+   float position_price_short=27;
+   float position_cost_long=28;
+   float position_cost_short=29;
+   float last_price=30;
+   float float_profit_long=31;
+   float float_profit_short=32;
+   float float_profit=33;
+   float position_profit_long=34;
+   float position_profit_short=35;
+   float position_profit=36;
+   float margin_long=37;
+   float margin_short=38;
+   float margin=39;
+
+}
+message Transfer{
+   int64 datetime=1;
+   string currency=2;
+   float amount=3;
+   int32 error_id=4;
+   string error_msg=5;
+}
+
+message Bank{
+   string id = 1;
+   string name =2 ;
+   string bank_account =3;
+   float fetch_amount =4;
+}
+
+
+message QIFI{
+
+     string databaseip=1;
+     string account_cookie=2;
+     string password =3;
+     string portfolio=4;
+     string broker_name=5;
+     string capital_password=6;
+     string bank_password =7;
+     string bankid=8;
+     string investor_name=9;
+     float money=10;
+     string pub_host=11;
+    map<string, string> settlement=12;
+     string taskid=13;
+     string trade_host=14;
+     string updatetime=15;
+     string wsuri=16;
+     string bankname=17;
+     string trading_day=18;
+     int32 status=19;
+     Account accounts=20;
+    map<string, Bank> banks=21;
+    map<string, string> event=22;
+    map<string, Order> orders=23;
+    map<string, Position> positons=24;
+    map<string, Trade> trades=25;
+    map<string, Transfer> transfers=26;
+     int32 ping_gap=27;
+}

@@ -159,44 +159,6 @@ QIFI 协议 作为qatrader/ qapms的标准协议, 支持股票/期货市场
             "volume_left" : 1,
             "last_msg" : ""
         },
-        "QAOTG_BIn7hPtG" : {
-            "seqno" : 5,
-            "user_id" : "100010",
-            "order_id" : "QAOTG_BIn7hPtG",
-            "exchange_id" : "SHFE",
-            "instrument_id" : "rb2001",
-            "direction" : "SELL",
-            "offset" : "OPEN",
-            "volume_orign" : 1,
-            "price_type" : "LIMIT",
-            "limit_price" : 3480.0,
-            "time_condition" : "GFD",
-            "volume_condition" : "ANY",
-            "insert_date_time" : NumberLong(1567775677891881150),
-            "exchange_order_id" : "QAOTG_BIn7hPtG",
-            "status" : "ALIVE",
-            "volume_left" : 1,
-            "last_msg" : ""
-        },
-        "QAOTG_P4kEw2FJ" : {
-            "seqno" : 13,
-            "user_id" : "100010",
-            "order_id" : "QAOTG_P4kEw2FJ",
-            "exchange_id" : "SHFE",
-            "instrument_id" : "rb2001",
-            "direction" : "BUY",
-            "offset" : "OPEN",
-            "volume_orign" : 1,
-            "price_type" : "LIMIT",
-            "limit_price" : 3480.0,
-            "time_condition" : "GFD",
-            "volume_condition" : "ANY",
-            "insert_date_time" : NumberLong(1567775810195686542),
-            "exchange_order_id" : "QAOTG_P4kEw2FJ",
-            "status" : "FINISHED",
-            "volume_left" : 0,
-            "last_msg" : ""
-        }
     },
     "positions" : {
         "SHFE_rb2001" : {
