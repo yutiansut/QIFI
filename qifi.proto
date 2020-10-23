@@ -146,4 +146,5 @@ message QIFI{
     map<string, Trade> trades=25;
     map<string, Transfer> transfers=26;
      int32 ping_gap=27;
+     string eventmq_ip = 28;
 }
