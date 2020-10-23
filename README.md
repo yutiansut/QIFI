@@ -82,6 +82,7 @@ QIFI 协议 作为qatrader/ qapms的标准协议, 支持股票/期货市场
     "bankname" : "模拟银行",
     "trading_day" : "20190909",
     "status" : 200
+    "eventmq_ip: "192.168.2.126:5672",
     "accounts" : {
         "user_id" : "100010",  // 用户号 兼容diff协议, ==> 实盘则为具体账户号
         "currency" : "CNY",    // 货币属性 兼容diff协议
